@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && npm run deploy"
+    "start":"node server/index.js",
+	  "build":"rm -rf dist && webpack --mode production"
   },
   "keywords": [],
   "author": "",
@@ -33,5 +34,8 @@
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1"
+  },
+  "engines": {
+    "node": "12.18.x"
   }
 }
