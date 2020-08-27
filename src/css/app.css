@@ -1,0 +1,199 @@
+body{
+    background-image: url(../other/images/96dpi_DataTexture_10a.webp);
+    background-color: #342c2c;
+    background-size:auto
+}
+
+.component-menu{
+    border-radius: 20px;
+    margin:20px;
+    width:100%;
+    height:100%;
+}
+
+#main-menu-layout{
+ 
+    background-color:#f9f8f7;
+    background-image: url(../other/images/96dpi_DataTexture_10i.webp);
+    border-radius: 20px;
+    min-height: 60vh;
+    
+    
+ 
+}
+.component-menu-row{
+    margin:15px;
+}
+#start{
+    height:100%;
+}
+
+.menu-button{
+    background-color: inherit;
+    
+    width:100%;
+    height:100%;
+
+}
+.menu-button-icon{
+    width: 50%;
+}
+
+.jenkins-prov-lg{
+    font-size: x-small;
+}
+
+#stepper-root,#stepper-active-1{
+    background-image: inherit;
+    border-radius: inherit; 
+    padding-left: 15px;
+    padding-right:15px;
+}
+
+
+
+
+.menu-button-container{
+    flex:1;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+.menu-image-row{
+    flex:1;
+}
+
+.button-column{
+    padding:5px;
+}
+
+.md-footer-ora{
+    background-color: #c54a39;
+    padding-top:10px;
+}
+.main-container{
+    padding:0px;
+    height: 100%;
+}
+
+.contact{
+    color:white;
+    font-size: smaller;
+}
+.link-header{
+    color:white;
+}
+
+a{
+    color: white;
+    
+}
+a:hover{
+    color:white;
+    text-decoration: underline;
+}
+a.logout{
+    text-decoration: underline;
+    text-decoration-color:#c54a39;
+    text-underline-position: under;
+}
+a.black{
+    color:black
+}
+a.black:hover{
+    color:black;
+    text-decoration:none;
+}
+.link-content{
+    padding: 0;
+}
+
+#wizard-buttons{
+    padding: 5px;
+}
+
+.basic-details-form{
+    width:50%;
+}
+#summary-div{
+    padding: 5px;
+    width: 100%;
+}
+.exit-link:hover{
+    text-decoration: none;
+}
+
+.table-head{
+    width: 10%;
+    font-weight: bold;
+}
+
+.manage-jenkins{
+    width:100%;
+    height:100%;
+}
+
+.details-manage-jenkins{
+    height:20vh;
+    width: 100%;
+    margin-left:0px !important;
+
+}
+.details-button{
+    margin:10px !important;
+}
+.copy-k8{
+    padding-top:6px !important;
+}
+
+.action-button-cell{
+    padding-top: 0px !important;
+}
+.p-0{
+    margin:0px;
+    width: 100%;
+}
+.brand-nav{
+    padding-right:5px;
+}
+
+.hidden{
+    display: none;
+}
+
+.paper-text{
+    padding:30px;
+    font-size: larger;
+}
+
+.paper{
+    background-color:#94acac !important;
+    background-image: url(../other/images/96dpi_DataTexture_10g.webp)  !important;
+    border-radius: 20px !important;
+}
+
+a.jenkins{
+    color:blue;
+}
+
+html,body{
+    height:100%;
+    width:100%
+}
+
+.component-menu-description{
+    margin-top:50px;
+}
+
+.md-footer-main{
+    width: 100% !important;
+    height: 30% !important;
+}
+
+.icon-col-footer{
+    padding-left:2vw;
+}
+.jenkins-count{
+    font-size: medium;
+    font-weight: bold;
+}
