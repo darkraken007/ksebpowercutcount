@@ -51,16 +51,20 @@ app.get('/update', (req, res) => {
   }
   else{
     if(req.query.key=="854317221"){
+      if(req.query.count==""||req.query.count==undefined){
+        res.sendStatus(200)
+      }
+      var count = parseInt(req.query.count);
       var dailycount = db.getData("/dailyCount") | 0;
       var monthlycount = db.getData("/monthlyCount") | 0;
       var yearlycount = db.getData("/yearlyCount") | 0;
       var totalCount = db.getData('/totalCount') | 0;
       var averageCountPerDayThisMonth = db.getData("/averageCountPerDay") | 0;
-      db.push("/dailyCount",dailycount+1);
-      db.push("/monthlyCount",monthlycount+1);
-      db.push("/yearlyCount",yearlycount+1);
-      db.push("/totalCount",totalCount+1);
-      db.push("/averageCountPerDay",monthlycount/date.getDate());
+      db.push("/dailyCount",dailycount+count);
+      db.push("/monthlyCount",monthlycount+count);
+      db.push("/yearlyCount",yearlycount+count);
+      db.push("/totalCount",totalCount+count);
+      db.push("/averageCountPerDay",+(monthlycount/date.getDate()).toFixed(2));
     }
     res.sendStatus(200);
 
