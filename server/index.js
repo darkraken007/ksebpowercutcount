@@ -47,12 +47,12 @@ app.get('/update', (req, res) => {
   var date = new Date();
 
   if(req.query.key==""||req.query.key==undefined){
-    res.sendStatus(200);
+    res.sendStatus(403);
   }
   else{
     if(req.query.key=="854317221"){
       if(req.query.count==""||req.query.count==undefined){
-        res.sendStatus(200)
+        res.sendStatus(403)
       }
       var count = parseInt(req.query.count);
       var dailycount = db.getData("/dailyCount") | 0;
