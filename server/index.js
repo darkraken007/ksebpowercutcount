@@ -43,10 +43,37 @@ function updateAndSend(data,count,res){
   if(count==-1){
     body = {
       dailyCount: 0,
+      monthlyCount:data[0].monthlyCount,
+      yearlyCount:  data[0].yearlyCount,
+      averageCountPerDay: data[0].averageCountPerDay,
+      totalCount: data[0].totalCount
+    }
+  }
+  else if(count==-9){
+    body = {
+      dailyCount: 0,
+      monthlyCount:0,
+      yearlyCount:0,
+      averageCountPerDay:0,
+      totalCount:0
+    }
+  }
+  else if(count==-2){
+    body = {
+      dailyCount: data[0].dailyCount,
       monthlyCount: 0,
-      yearlyCount: 0,
+      yearlyCount: data[0].yearlyCount,
       averageCountPerDay: 0,
-      totalCount: 0
+      totalCount: data[0].totalCount
+    }
+  }
+  else if(count==-3){
+    body = {
+      dailyCount: data[0].dailyCount,
+      monthlyCount: data[0].monthlyCount,
+      yearlyCount: 0,
+      averageCountPerDay: data[0].averageCountPerDay,
+      totalCount: data[0].totalCount
     }
   }
   else{
